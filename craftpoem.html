@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Poem Crafting - PoetiMuse</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="author" content="Sheri Ochoa" />
+    <meta name="designer" content="Sheri Ochoa" />
+    <meta property="og:title" content="Poem Crafting - PoetiMuse" />
+    <meta property="og:description" content="Craft your own poem." />
+    <!--  UNcomment here and add urls for og properties -->
+    <meta
+      property="og:url"
+      content="https://shereochoa.github.io/PoetiMuse/craftpoem.html"
+    />
+    <meta
+      property="og:image"
+      content="https://shereochoa.github.io/PoetiMuse/PoetiMuse.png"
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta name="description" content="PoetiMuse logo." />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <a href="#crafting" class="skip-navigation">Skip to main content</a>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-center" href="index.html">
+            <p>PoetiMuse</p>
+            <img
+              src="img/logo.png"
+              alt="Logo"
+              width="30rem"
+              class="d-inline-block align-text-middle"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faqs.html">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="craftpoem.html">Craft poem</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Crafting Poem -->
+    <section class="container text-center" id="crafting">
+      <div class="row justify-content-center about-us">
+        <div class="col-8">
+          <div>
+            <h1 class="display-6">Poem crafting</h1>
+            <p class="lead">
+              Let your imagination take the reins and offer your prompts.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="mb-3">
+            <label for="theme" class="form-label">Create poem about</label>
+            <input
+              class="form-control"
+              id="theme"
+              placeholder="e.g. my puppy playing in the snow"
+            />
+          </div>
+          <select
+            id="mood"
+            class="form-select"
+            aria-label="Default select example"
+          >
+            <option selected>That has a mood</option>
+            <option value="Cheerful">Cheerful</option>
+            <option value="Gloomy">Gloomy</option>
+            <option value="Hopeful">Hopeful</option>
+            <option value="Melancholic">Melancholic</option>
+            <option value="Angry">Angry</option>
+            <option value="Humorous">Humorous</option>
+            <option value="Idyllic">Idyllic</option>
+            <option value="Whimsical">Whimsical</option>
+            <option value="Romantic">Romantic</option>
+            <option value="Fearful">Fearful</option>
+            <option value="Calm">Calm</option>
+            <option value="Reflective">Reflective</option>
+          </select>
+          <select
+            id="lenght"
+            class="form-select"
+            aria-label="Default select example"
+          >
+            <option selected>With a lenght</option>
+            <option value="4">Short</option>
+            <option value="8">Medium</option>
+            <option value="16">Long</option>
+          </select>
+          <select
+            id="style"
+            class="form-select"
+            aria-label="Default select example"
+          >
+            <option selected>Of the style</option>
+            <option value="Free verse">Free verse</option>
+            <option value="Villanelle">Villanelle</option>
+            <option value="Acrostic">Acrostic</option>
+            <option value="Sonnet">Sonnet</option>
+            <option value="Biblical">Biblical</option>
+            <option value="Limerick">Limerick</option>
+            <option value="Ode">Ode</option>
+            <option value="Elegy">Elegy</option>
+            <option value="Haiku">Haiku</option>
+            <option value="Other">Other</option>
+          </select>
+          <div class="mb-3">
+            <label for="other-style" class="form-label">Other style</label>
+            <input
+              class="form-control"
+              id="other-style"
+              placeholder="e.g. futuristic"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="negative" class="form-label">Don't include</label>
+            <input
+              class="form-control"
+              id="negative"
+              placeholder="e.g. barking"
+            />
+          </div>
+          <div>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="createPoem()"
+            >
+              Create poem
+            </button>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card">
+            <div class="absolute">
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="copyText()"
+              >
+                Copy text
+              </button>
+            </div>
+            <div id="result" class="card-body">
+              Your poetic creation will display here.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of Crafting Poem-->
+
+    <!--Footer-->
+    <section id="footer">
+      <div class="container text-center d-none d-lg-block">
+        <div class="row">
+          <div class="col-3">
+            <a class="footer-brand" href="index.html">
+              <img src="img/logo.png" alt="Logo PoetiMuse" width="30rem" />
+              PoetiMuse
+            </a>
+          </div>
+          <div class="col-1 footer-alignment">
+            <div><a class="footer-link" href="index.html">Home</a></div>
+          </div>
+          <div class="col-1 footer-alignment">
+            <div><a class="footer-link" href="faqs.html">FAQs</a></div>
+          </div>
+          <div class="col-1 footer-alignment">
+            <div>
+              <a class="footer-link" href="craftpoem.html">Craft poem</a>
+            </div>
+          </div>
+          <div class="col-3 footer-alignment">
+            Licensed under the
+            <a class="footer-link" href="copyright.html#MIT-License">
+              MIT License.</a
+            >
+          </div>
+          <div class="col-3 footer-alignment">
+            <a class="footer-link" href="copyright.html">
+              Terms of Use and Copyright
+            </a>
+            <div>&copy; 2023 PoetiMuse.</div>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center d-lg-none">
+        <div class="row">
+          <div class="col">
+            <a class="footer-brand" href="index.html">
+              <img src="img/logo.png" alt="Logo PoetiMuse" width="30rem" />
+              PoetiMuse
+            </a>
+          </div>
+          <div class="col">
+            <a class="footer-link" href="index.html">Home</a><br />
+            <a class="footer-link" href="faqs.html">FAQs</a><br />
+            <a class="footer-link" href="craftpoem.html">Craft poem</a><br />
+            <a class="footer-link" href="copyright.html">
+              Terms of Use and Copyright
+            </a>
+          </div>
+
+          <div class="col">
+            <div>
+              <p>
+                Licensed under the
+                <a class="footer-link" href="copyright.html#MIT-License">
+                  MIT License.</a
+                >
+              </p>
+              <p>&copy; 2023 PoetiMuse.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of Footer-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

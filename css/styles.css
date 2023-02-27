@@ -1,0 +1,285 @@
+body {
+  color: var(--grayDark);
+  background-color: #ffffff;
+  font-family: "Bellefair";
+}
+
+:root {
+  --primary: #997205;
+  --primaryDark: #664c04;
+  --primaryLight: #cc9807;
+  --primaryExtraLight: #e5d3a1;
+  --secondary: #052299;
+  --secondaryDark: #031766;
+  --secondaryLight: #062ecc;
+  --secondaryExtraLight: #a1aee5;
+  --accents: #ffffff;
+  --gray: #414141;
+  --grayDark: #343434;
+  --grayLight: #757575;
+}
+
+.skip-navigation {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-navigation:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+.bg-body-tertiary {
+  background-color: #ffffff !important;
+}
+
+.nav-link {
+  color: var(--primary);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.navbar {
+  position: relative;
+  height: 15rem;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px !important;
+  display: block;
+}
+
+.navbar-brand p {
+  color: var(--primary);
+  padding-bottom: 0.5rem;
+}
+
+.navbar button.navbar-toggler.collapsed span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(153, 114, 5, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar button.navbar-toggler span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(153, 114, 5, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar button.navbar-toggler {
+  color: var(--primary);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primaryDark);
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background-color: var(--primary);
+}
+
+div.absolute {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+#welcome {
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+}
+
+#welcome p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#footer {
+  background-color: var(--primaryExtraLight);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--secondaryDark);
+}
+
+.footer-brand {
+  color: var(--primaryDark);
+  text-decoration: none;
+}
+.footer-link {
+  color: var(--secondaryDark);
+}
+
+.footer-link:hover {
+  color: var(--primaryDark);
+}
+
+.footer-alignment {
+  padding-top: 1rem;
+}
+
+.form-control:focus {
+  border-color: var(--primaryExtraLight);
+  box-shadow: var(--primaryExtraLight);
+}
+
+.form-select {
+  margin-bottom: 1rem;
+}
+
+.form-select:focus {
+  border-color: var(--primaryExtraLight);
+  box-shadow: var(--primaryExtraLight);
+}
+
+#crafting {
+  margin-bottom: 10rem;
+}
+
+#crafting p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#result {
+  min-height: 18rem;
+  margin-bottom: 5rem;
+}
+
+.card {
+  margin-top: 2rem;
+}
+
+#faqs {
+  margin-bottom: 4rem;
+}
+
+#faqs h2 {
+  margin-bottom: 2rem;
+}
+
+#faqs p {
+  margin-bottom: 2rem;
+}
+
+#terms h2 {
+  margin-bottom: 2rem;
+}
+
+#copyright h2 {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#copyright {
+  margin-bottom: 5rem;
+}
+
+.transbox {
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.accordion-button:focus {
+  border-color: var(--primary);
+  box-shadow: var(--primary);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--primaryExtraLight);
+  color: var(--grayDark);
+}
+
+#contact img {
+  margin-top: 2rem;
+}
+
+#get-in-touch h2 {
+  margin-bottom: 2rem;
+}
+
+.error-page p {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+/********** Medium devices and up **********/
+@media (min-width: 768px) {
+  #contact {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  #get-in-touch {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .error-page {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+}
+
+/********** Small devices **********/
+@media (min-width: 576px) and (max-width: 767px) {
+  #contact {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  #get-in-touch {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .error-page {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+/********** Extra small devices **********/
+@media (max-width: 575px) {
+  #contact {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  #get-in-touch {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .error-page {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+/********** Super extra small devices **********/
+@media (max-width: 450px) {
+  #get-in-touch {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .error-page {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
