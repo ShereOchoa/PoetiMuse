@@ -1,5 +1,3 @@
-console.log("si estoy cargandome");
-
 //Poem creation function
 
 function createPoem() {
@@ -33,26 +31,11 @@ function createPoem() {
 
   console.log(promptString);
 
-  //API request data (to be placed in the body of the request)
-  data = {
-    model: "text-davinci-003",
-    prompt: promptString,
-    max_tokens: 256,
-    top_p: 1,
-    frequency_penalty: 0,
-    presence_penalty: 0,
-  };
-
-  let url = "https://api.openai.com/v1/completions";
+  let url = "https://hellopm-3fflh6psqq-nn.a.run.app/";
 
   fetch(url, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization:
-        "Bearer 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          ",
-    },
-    body: JSON.stringify(data),
+    body: promptString,
   })
     .then((response) => response.json())
     .then((data) => {
@@ -64,8 +47,8 @@ function createPoem() {
 
         result.innerText = data["error"]["message"];
       } else {
-        console.log(data["choices"][0]["text"]);
-        result.innerText = data["choices"][0]["text"];
+        console.log(data["result"]);
+        result.innerText = data["result"];
         result.scrollIntoView();
       }
     })
