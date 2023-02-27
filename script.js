@@ -34,7 +34,7 @@ function createPoem() {
   let url = "https://hellopm-3fflh6psqq-nn.a.run.app/";
 
   fetch(url, {
-    method: "GET",
+    method: "POST",
     body: promptString,
   })
     .then((response) => response.json())
