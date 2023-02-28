@@ -87,6 +87,7 @@ body {
 .btn-primary {
   background-color: var(--primary);
   border: var(--primary);
+  font-weight: 900;
 }
 
 .btn-primary:hover {
@@ -162,8 +163,16 @@ div.absolute {
   margin-bottom: 2rem;
 }
 
+#crafting select {
+  margin-bottom: 2rem;
+}
+
+#crafting .form-control {
+  margin-bottom: 2rem;
+}
+
 #result {
-  min-height: 18rem;
+  min-height: 15rem;
   margin-bottom: 5rem;
 }
 

@@ -5,8 +5,6 @@ function createPoem() {
   const mood = document.getElementById("mood");
   const lenght = document.getElementById("lenght");
   const style = document.getElementById("style");
-  const otherStyle = document.getElementById("other-style");
-  const negative = document.getElementById("negative");
   const result = document.getElementById("result");
   //craft prompt string from inputs adding the theme and mood values from the inputs
   let promptString =
@@ -16,18 +14,10 @@ function createPoem() {
     mood.value +
     " mood and with a ";
 
-  //add the style, depending if chose from dropdown or prefered to use other
-  if (style.value == "other") {
-    promptString += otherStyle.value + " style that is ";
-  } else {
-    promptString += style.value + " style that is ";
-  }
+  //add style
+  promptString += style.value + " style that is ";
   // add the lenght of the poem
   promptString += lenght.value + " lines long";
-  // add the words to be excluded in case they were written
-  if (!negative.value == "") {
-    promptString += " but does not include the words " + negative.value;
-  }
 
   console.log(promptString);
 
