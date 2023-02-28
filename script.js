@@ -19,7 +19,9 @@ function createPoem() {
   // add the lenght of the poem
   promptString += lenght.value + " lines long";
 
-  console.log(promptString);
+  //console.log(promptString);
+  result.scrollIntoView();
+  result.innerText = "Your poem will be ready shortly...";
 
   let url = "https://hellopm-3fflh6psqq-nn.a.run.app/";
 
@@ -39,7 +41,7 @@ function createPoem() {
       } else {
         console.log(data["result"]);
         result.innerText = data["result"];
-        result.scrollIntoView();
+        
       }
     })
     .catch((error) => {
